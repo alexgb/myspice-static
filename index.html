@@ -1,0 +1,23 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>MySpice</h1>
+    {% for recipe_data in site.data.recipes %}
+    {% assign recipe = recipe_data[1] %}
+      <h2>{{ recipe.title }}</h2>
+      <ul>
+        {% for ingredient in recipe.ingredients %}
+          <li>{{ ingredient }}</li>
+        {% endfor %}
+      </ul>
+      <p>{{ recipe.directions | markdownify }}</p>
+    {% endfor %}
+  </body>
+</html>

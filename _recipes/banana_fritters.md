@@ -1,8 +1,8 @@
 ---
 title: Banana Fritters
 subtitle:
-description: A great simple recipe for using up ripe bananas.
 author_name: Alex Gibbons
+description: A great simple recipe for using up ripe bananas.
 ingredients:
   - 1 Cup Self Rising Flour
   - ¾ Cup Milk

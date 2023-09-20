@@ -10,7 +10,7 @@ title: MySpice
     <hr class="RecipesIndex-break">
 
     {% for recipe in site.recipes %}
-      <a href="{{ recipe.url }}">
+      <a href="{{ site.baseurl }}{{ recipe.url }}">
         <div class="RecipesIndexItem">
           <div class="RecipesIndexItem-title">
             {{ recipe.title }}

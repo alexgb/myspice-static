@@ -2,11 +2,49 @@
 layout: default
 ---
 
-<h1>MySpice</h1>
-<h2>{{ page.title }}</h2>
-<ul>
-  {% for ingredient in page.ingredients %}
-    <li>{{ ingredient }}</li>
-  {% endfor %}
-</ul>
-<p>{{ page.directions | markdownify }}</p>
+<div class="RecipeShow flex-row u-full-height">
+  <div class="RecipeShow-MainCol flex-row flex-col scroll-container">
+    <div>
+      <div class="RecipeShow-MainContent">
+
+        <div class="Toolbar flex-row">
+          <div class="flex-col">
+            <a class="ToolbarItem ToolbarItem--close" href="/">×</a>
+          </div>
+        </div>
+
+        <h1 class="RecipeShow-Title">{{ page.title }}</h1>
+        <hr class="RecipeShow-Break">
+        <h3 class="RecipeShow-Subtitle">{{ page.subtitle }}</h3>
+
+        <p><i>{{ page.description }}</i></p>
+
+        {{ page.directions | markdownify }}
+
+        <p class="RecipeShow-Author">
+          By {{ page.author_name }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="RecipeShow-SidebarWrapper scroll-container">
+    <div class="RecipeShow-SidebarContent ">
+      <div class="flex-row">
+        <div class="flex-col text-size-20">
+          <strong>Ingredients</strong>
+        </div>
+        <div class="flex-col text-right">
+          {{ page.servings }} servings
+        </div>
+      </div>
+      <hr class="RecipeShow-IngredientsBreak">
+      <ul class="RecipeShow-IngredientsList">
+        {% for ingredient in page.ingredients %}
+          <li class="RecipeShow-IngredientsListItem">{{ ingredient }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+

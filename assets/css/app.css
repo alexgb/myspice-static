@@ -1,0 +1,284 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+
+  color: #222;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 50px 0;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+  margin: 40px 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  transition: color 0.150s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* App specific styling */
+
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  flex: 1
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.scroll-container {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.u-full-height {
+  height: 100%;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-size-20 {
+  font-size: 20px;
+}
+
+.Toolbar {
+  color: #BBB;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  padding: 30px;
+}
+
+.ToolbarItem {
+  color: #BBB;
+}
+
+.ToolbarItem:hover {
+  color: initial;
+}
+
+.ToolbarItem--close {
+  display: inline-block;
+  margin-top: -18px;
+  font-family: Helvetica;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.ToolbarItem--close:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .ToolbarItem--close {
+    font-size: 40px;
+  }
+}
+
+.FlashError {
+  color: #D0021B;
+  background-color: #FFDADF;
+  padding: 25px;
+}
+
+.ErrorMessage {
+  color: #D0021B;
+  font-style: italic;
+}
+
+
+/* Recipes */
+
+/* INDEX */
+/* ===== */
+
+.RecipesIndex {
+  margin: 80px 30px 30px 30px;
+  justify-content: space-around;
+  max-width: 600px;
+}
+
+.RecipesIndexSearch {
+  width: 100%;
+  border: 0;
+  outline: none;
+  color: #607EBD;
+  font-family: 'EB Garamond', serif;
+  font-size: 50px;
+}
+
+.RecipesIndexSearch::placeholder {
+  color: #607EBD;
+  opacity: 0.5;
+}
+
+.RecipesIndex-break {
+  margin: 5px 0 60px 0;
+  height: 4px;
+  border: 0;
+  background-color: #607EBD;
+}
+
+.RecipesIndexItem {
+  margin: 15px 0;
+}
+
+.RecipesIndexItem-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.RecipesIndexItem-info {
+  font-size: 15px;
+}
+
+.RecipesIndexItem-subtitle {
+  font-style: italic;
+}
+
+
+/* SHOW */
+/* ==== */
+
+
+.RecipeShow-SidebarWrapper {
+  color: white;
+  background-color: #607EBD;
+  width: 350px;
+}
+
+.RecipeShow-SidebarContent {
+  padding: 30px;
+}
+
+.RecipeShow-MainCol {
+  position: relative;
+  justify-content: space-around;
+}
+
+.RecipeShow-MainContent {
+  margin: 100px;
+  max-width: 600px;
+}
+
+.RecipeShow-Title {
+  margin: 0;
+  line-height: 1.1em;
+}
+
+.RecipeShow-Subtitle {
+  margin-top: 0;
+}
+
+.RecipeShow-Author {
+  margin-top: 70px;
+}
+
+.RecipeShow-IngredientsBreak {
+  margin: 20px 0;
+}
+
+.RecipeShow-Break {
+  margin: 40px 0;
+  border: 0;
+  height: 2px;
+  background-color: #979797;
+}
+
+.RecipeShow-IngredientsList {
+  margin: 0;
+  padding: 0;
+}
+
+.RecipeShow-IngredientsListItem {
+  list-style-type: none;
+  margin: 1em 0;
+  line-height: 1em;
+}
+
+
+@media (max-width: 1000px) {
+  .RecipeShow-MainContent {
+    margin: 0 50px 50px 50px;
+  }
+
+  .RecipeShow .Toolbar {
+    position: static;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .RecipeShow-Break {
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .RecipeShow-SidebarWrapper {
+    width: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .RecipeShow {
+    display: block;
+  }
+
+  .RecipeShow-MainContent {
+    margin: 0;
+    padding: 0 30px 30px 30px;
+    max-width: 600px;
+  }
+
+  .RecipeShow-MainCol {
+    height: auto;
+    overflow-y: visible;
+  }
+
+  .RecipeShow-SidebarWrapper {
+    height: auto;
+    overflow-y: visible;
+    width: 100%;
+  }
+
+  .RecipeShow-Title {
+    margin-top: 20px;
+    font-size: 40px;
+  }
+
+  .RecipeShow-Break {
+    margin: 20px 0;
+  }
+}

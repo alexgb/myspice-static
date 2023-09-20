@@ -1,6 +1,8 @@
 ---
 title: Chicken with Lemon Grass
-sub_title: Stir fry
+subtitle:
+author_name: Susan Gibbons
+description: Stir fry
 ingredients:
   - 1 cup Japanese or jasmine rice
   - 1 1/2 cups water

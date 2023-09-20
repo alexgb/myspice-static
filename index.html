@@ -3,13 +3,27 @@ layout: default
 title: MySpice
 ---
 
-<h1>MySpice</h1>
-<ul>
-  {% for recipe in site.recipes %}
-    <li>
+<div class="flex-row flex-space-around">
+  <div class="flex-col RecipesIndex">
+    <input class="RecipesIndexSearch" type="text" placeholder="Search">
+
+    <hr class="RecipesIndex-break">
+
+    {% for recipe in site.recipes %}
       <a href="{{ recipe.url }}">
-        {{ recipe.title }}
+        <div class="RecipesIndexItem">
+          <div class="RecipesIndexItem-title">
+            {{ recipe.title }}
+          </div>
+          <div class="RecipesIndexItem-info">
+            <span class="RecipesIndexItem-subtitle">
+              {{ recipe.subtitle }}
+            </span>
+            •
+            {{ recipe.author_name }}
+          </div>
+        </div>
       </a>
-    </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </div>
+</div>

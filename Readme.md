@@ -6,7 +6,7 @@ This repository deploys to https://alexgb.github.io/myspice-static/.
 
 ## Adding Recipes
 
-Create a new recipe [here](/new/main/_recipes) using the template example recipe below. Save using underscored title as file name with `.md` extension, e.g. `no_knead_bread.md`
+Create a new recipe [here](https://github.com/alexgb/myspice-static/new/main/_recipes) using the template example recipe below. Save using underscored title as file name with `.md` extension, e.g. `no_knead_bread.md`
 
 ```
 ---
